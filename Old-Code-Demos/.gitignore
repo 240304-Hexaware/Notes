@@ -1,0 +1,10 @@
+*.class
+*.EAR
+*.WAR
+*.JAR
+*.iml
+
+
+*/out/
+*/dist/
+*/.idea/

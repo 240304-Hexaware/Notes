@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .title {
+            color:blue
+        }
+
+        div:hover {
+            background-color: blue;
+        }
+
+        #paragraph1 {
+            font-family: Arial; 
+            font-style: bold; 
+            color: purple
+        }
+
+        h3 { 
+            font-family: Arial; 
+            font-style: bold; 
+            color: red 
+        }
+        p {
+            font-style: bold; 
+            color: green 
+        }
+
+        a {
+            font-style: underline; 
+            color: yellow
+        }
+
+
+    </style>
+
+    <!-- <script src="script.js"></script> -->
+    <script src="script2.js"></script>
+
+
+
+</head>
+<body>
+    <h1 id="h1" class="title">This is big text</h1>
+
+    <h3 id="h2" class="title">this is smaller heading</h3>
+    <h3>This is another H3!</h3>
+
+    <p style="color:chocolate">This is a paragraph</p>
+
+    <p id="paragraph1" class="text">
+        this is a new paragraph <span>this is a span</span> this is the rest. 
+        <div>div is a block element</div>
+    </p>
+
+    <ul>
+        <li>Britta filters</li>
+        <li>cat litter</li>
+        <li>coffee</li>
+        
+    </ul>
+
+    <ol>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ol>
+
+
+
+
+    <!-- <img id="image" class="image" src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Test.svg" > -->
+    <br>
+    <a href="http://google.com">Click here to go to google.</a>
+
+
+    <hr>
+    <br>
+    <h2>Registration Form!</h2>
+    <form action="http://localhost:8080/users" method="post" target="_blank">
+        <label>First Name: </label>
+        <input id="firstName" type="text">
+        <br>
+        <label>Last Name: </label>
+        <input id="lastName" type="text">
+        <br>
+        <label>Username: </label>
+        <input id="username" type="text">
+        <br>
+        <label>Password: </label>
+        <input id="password" type="password">
+
+        <input type="submit">
+    </form>
+
+
+    
+    <br><br><br>
+    <textarea rows="12" cols="120"></textarea>
+
+
+    <h4>Pick a favorite color!</h4>
+    <input type="radio" name="color" id="green">
+    <label style="color:green">green</label><br>
+    <input type="radio" name="color" id="red">
+    <label style="color:red">red</label><br>
+    <input type="radio" name="color" id="blue">
+    <label style="color:blue">blue</label><br>
+    <input type="radio" name="color" id="yellow">
+    <label style="color:yellow">yellow</label><br>
+
+
+    <h4>Choose your pizza toppings!</h4>
+    <input type="checkbox" name="pizzaToppings" id="pepperoni">
+    <label>pepperoni</label><br>
+    <input type="checkbox" name="pizzaToppings" id="sausage">
+    <label>sausage</label><br>
+    <input type="checkbox" name="pizzaToppings" id="anchovi">
+    <label>anchovi</label><br>
+
+
+    <h4>Drop down!</h4>
+    <label>Choose state!</label>
+    <select name="state" id="state">
+        <option value="NY">New York</option>
+        <option value="WV">West Virginia</option>
+        <option value="CA">California</option>
+        <option value="TX">Texas</option>
+    </select>
+
+</body>
+
+</html>

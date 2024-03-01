@@ -1,0 +1,18 @@
+<h1>Pub-Sub Demo!</h1>
+<p>This demo shows a simple pub-sub design pattern where the publisher sends data to a channel, 
+and the subscribers subscribe to that channel in order to receive the published values.</p>
+
+<p>The channel service where our publisher component sends data is doing most of the work. When 
+a component subscribes to the channel they send a callback function that holds the logic to deliver the published 
+values to that component. When the component calls the subscribe() method, the channel returns another 
+callback function which can be used to unsubscribe later.</p>
+
+<p>This implementation can have multiple subscribers, which is the norm for pub-sub. In this version we have also 
+maintained the most recent value in the channel and we supply that to new subscribers as soon as they subscribe. 
+These two behaviors make this implementation of the pub-sub pattern very much like the Behavior Subject Observable 
+from the rxjs library (See notes).</p>
+<hr>
+<app-one></app-one>
+<app-two></app-two>
+<app-three></app-three>
+<app-four></app-four>

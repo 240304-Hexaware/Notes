@@ -1,0 +1,28 @@
+.title {
+    color:blue
+}
+
+div:hover {
+    background-color: blue;
+}
+
+#paragraph1 {
+    font-family: Arial; 
+    font-style: bold; 
+    color: purple
+}
+
+h3 { 
+    font-family: Arial; 
+    font-style: bold; 
+    color: red 
+}
+p {
+    font-style: bold; 
+    color: green 
+}
+
+a {
+    font-style: underline; 
+    color: yellow
+}
