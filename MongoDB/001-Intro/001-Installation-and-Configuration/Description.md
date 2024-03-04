@@ -11,7 +11,7 @@ We want to install the MongoDB Community Server. You can find downloads for all 
 Take note of the install location. On Windows 10, by default, the location will be `C:\Program Files\MongoDB\`. In that location is a `Server\<version>\bin\` folder. We will need to add that directory to the PATH variable in a later step. 
 
 ## Installing Mongosh
-Mongosh is the MongoDB shell, a command line application to manage and query your Mongo databases. This download isn't an MSI, we will have to install manually. Thankfully, it isn't difficult. We just need to unzip the files somewhere, then add the `bin\` folder to the PATH variable. Choose a location on your storage volume, create a folder if necessary, and unzip mongosh there. We would suggest creating a new directory in the same location where the MongoDB server was installed, `C:\Program Files\MongoDB\`
+Mongosh is the MongoDB shell, a command line application to manage and query your Mongo databases. This download isn't an MSI, we will have to [install manually](https://www.mongodb.com/try/download/shell). Thankfully, it isn't difficult. We just need to unzip the files somewhere, then add the `bin\` folder to the PATH variable. Choose a location on your storage volume, create a folder if necessary, and unzip mongosh there. We would suggest creating a new directory in the same location where the MongoDB server was installed, `C:\Program Files\MongoDB\`
 
 ![installation directory](./../../resources/install-directory.png)
 
