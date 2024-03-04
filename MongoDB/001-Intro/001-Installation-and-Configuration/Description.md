@@ -22,19 +22,19 @@ Next we need to add two locations to the PATH environment variable. PATH tells t
 
 Start by going to the Start menu and typing "Environment variables" into the search. 
 
-![start menu search](..\resources\search-start-menu.png)
+![start menu search](../../resources/search-start-menu.png)
 
 We want to edit the system environment variables. You will need administrator privilages to do so.
 
 After clicking that item you will be brought to the System Properties screen, click the button at the bottom right "Environment Variables...".
 
-![system env variables](..\resources\env-variables.png)
+![system env variables](../../resources/env-variables.png)
 
 This will bring up the Environment Variables screen. Note that there are two sections here, System and User variables. We want the system variables. Look in that list for a variable called "Path" or "PATH". Select it and click the "Edit..." button.
 
 This will bring up the path variable. Note that in modern Windows it shows a list of individual paths, the actual path variable is made by concatinating these paths together into one long string. Don't worry about that for now, all we need to do is click "New" and paste in the path to those `bin\` directories. We will add two new entries to this list.
 
-![edit path](..\resources\edit-path.png)
+![edit path](../../resources/edit-path.png)
 
 Once those two new entries are added we are finished! Click "OK" and back out of these menus. The OS will now check both of these folders any time it is looking for a needed program or script. The last step would be to restart your PC so the changes take effect. 
 
