@@ -1,7 +1,7 @@
 # Documents
 MongoDB stores data as BSON documents (JSON with [extra specifications](https://bsonspec.org/)). This structure is simple and flexible. Here is an example document from the MongoDB [documentation](https://www.mongodb.com/docs/v7.0/core/document/). Let's call this a user:
 
-```JSON
+```BSON
 {
     name: "sue",
     age: 26,
