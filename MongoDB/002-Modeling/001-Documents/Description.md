@@ -32,6 +32,10 @@ With BSON, just like JSON, we have a series of key/value pairs. Keys are strings
 ### Embedded Documents
 Because a document is a BSON object, and BSON objects can contain other BSON objects, we can "nest" or "embed" a whole document within another. We can use this to model some multiplicity relations. This is something we will see in greater detail later. In the last example, we have effectively embedded an `address` document within the user document.
 
+### Collections
+A collection is a linked list of documents which are likely to store related data. Most often documents in a collection will all have the same fields, but this is not necessary, some documents may have more or less than others, and this is totally valid. MongoDB is all about flexability.
+
+
 ### Dot Notation - Arrays
 Similar to the Java syntax to de-reference an object and gain access to its members, we use dot notation to access nested objects or elements within arrays. In the example above we have the `groups` array. If we wanted to access the value `"sports"` we would use dot notation like this: `groups.1`. (Remember that arrays are 0-indexed in nearly every language and implementation).
 
