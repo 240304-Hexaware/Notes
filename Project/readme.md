@@ -1,5 +1,5 @@
 # Mongo-Spring-Angular-MSA Project
-We will be building a fixed-file parser and storage application. This application will allow users to upload a fixed-file as well as a file specification. The app will then parse records from the file based on the specification, and store these records in a NoSQL database.
+We will be building a fixed-length file parser and storage application. This application will allow users to upload a fixed-file as well as a file specification. The app will then parse records from the file based on the specification, and store these records in a NoSQL database.
 
 The purpose of this project is for practicing the technology you learn in training. Each of you will have your own project which will go through 4 phases during training:
  1. Database & Server
