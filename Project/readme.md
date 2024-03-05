@@ -65,3 +65,14 @@ The following describe how features should be implemented from the point of view
 
 ## Stretch Goals & Changes
 Currently there are no stretch goals defined. We may add some here later, or we may move functional requirements down here. I would encourage you to add your own features or ideas, and modify the project to make your version unique. You must still adhere to the requirements defined in this document. Feel free to discuss changes to these requirements with your trainer.
+
+## Timeline
+There are 4 phases, 
+
+
+### How to start:
+Think about "Domain Objects" - (data layer, DB) - Users, files, specifications, metadata, parsed data
+Think about the API - (presentation layer) what HTTP endpoints will be available to UI, and how will we access them?
+Think about the work - (service layer) - What stuff will I need to do to those domain objects
+Think about the UI - What screens will need to show what information and invoke what API calls?
+
