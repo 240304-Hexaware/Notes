@@ -72,7 +72,10 @@ There are 4 phases,
 
 ### How to start:
 Think about "Domain Objects" - (data layer, DB) - Users, files, specifications, metadata, parsed data
+  
 Think about the API - (presentation layer) what HTTP endpoints will be available to UI, and how will we access them?
+  
 Think about the work - (service layer) - What stuff will I need to do to those domain objects
+  
 Think about the UI - What screens will need to show what information and invoke what API calls?
 
