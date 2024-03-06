@@ -8,3 +8,8 @@ There is no referential integrity in MongoDB. We can reference other documents, 
 ### Indexes
 Indexes in Mongo and SQL are very similar, some portion of the data is copied into a data structure which is very fast to search, and from there you can access the rest of the document. 
 
+### Ordering
+In MongoDB the order of results depends on the ordering of the searched index. This is unlike SQL, where the order of the results is based on a clause in the query. In Mongo you get the results in the order specified by the index.
+
+### more to come...
+
