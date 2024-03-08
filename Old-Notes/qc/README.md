@@ -2,7 +2,7 @@
 These files are full of questions you are likely to be asked as part of QC. You should focus your QC studies on these, but know that you may get asked questions that you didn't see here. If you see something in these files that you don't think was covered in training, please let your trainer know. 
 
 
-### Current Competencies for QC:
+### Current Competencies for QC (Week 1 - 2024-03-04):
  - Pre-training:
    - Java/SQL/REST
    - Spring/Spring Boot
