@@ -3,11 +3,7 @@ These files are full of questions you are likely to be asked as part of QC. You 
 
 
 ### Current Competencies for QC (Week 1 - 2024-03-04):
- - Pre-training:
-   - Java/SQL/REST
-   - Spring/Spring Boot
- - Training:
-   - MongoDB
+ - MongoDB
 
 ### Topics for Competencies:
  - [OOP](./oop.md)
