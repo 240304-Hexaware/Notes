@@ -1,0 +1,39 @@
+# MongoDB QC Study
+ - What is MongoDB?
+ - What is MongoDB Atlas?
+ - What is Monsgosh (Mongo Shell)?
+ - What is the Mongodb Java Driver?
+ - What makes MongoDB different from a relational database?
+ - What are documents?
+ - What are collections?
+ - What are indexes, and how do they work?
+ - How does an index speed up mongo database access?
+ - If indexing a field speeds up querying that collection, why not add an index on every field in every collection?
+ - What would be a use case for making an index hidden?
+ - What is the primary key of a mongodb collection?
+ - What data types are valid for the primary key field?
+ - What are embedded documents?
+ - When would we want to use embedded data?
+ - What are document references?
+ - When would we want to use document references?
+ - Does mongodb enforce referential integrity?
+ - How can you model a one-to-many relation in mongodb?
+ - How can you model a many-to-many relationship in mongodb?
+ - How do we use our mongo database in a java application?
+ - What are these interfaces for:
+   - MongoClient
+   - MongoDatabase
+   - MongoCollection<>
+   - Document
+   - Bson
+ - How do we insert a document into a collection with mongosh?
+ - How do we insert a document into a collection with Mongo Java Driver?
+ - How do we insert many documents at once?
+ - How do we delete documents?
+ - How do we update documents?
+ - What is the difference between replacing and updating a document?
+ - Does MongoDB support transactions?
+ - Why is it not necessary to perform single document updates as part of a transaction?
+ - Why are mongodb indexes defined with an integer value (1, or -1)?
+ - What is an aggregation pipeline?
+ - Are there any non-pipeline aggregations?
