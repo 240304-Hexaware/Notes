@@ -16,7 +16,7 @@ These files are full of questions you are likely to be asked as part of QC. You 
  - [SQL](./qc-sql.md)
  - [REST](./qc-rest.md)
  - [Spring](./qc-spring.md)
- - MongoDB (Qc study guide not yet written)
+ - [MongoDB](./qc-mongodb.md)
 
 ### Backend:
  - [OOP](./oop.md)
