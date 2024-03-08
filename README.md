@@ -2,6 +2,7 @@
 Here's where I'll add any notes. There is a large old repo of notes in here from previous trainings as well as old demos. Feel free to explore these. I'll link any which will be useful to us.
 
 # QC Prep
+### Week 1 - MongoDB Competency
  - [MongoDB](./Old-Notes/qc/qc-mongodb.md)
 ### Java/SQL/REST & Spring Competencies
  - [OOP](./Old-Notes/qc/oop.md)
