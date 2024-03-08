@@ -9,6 +9,15 @@ These files are full of questions you are likely to be asked as part of QC. You 
  - Training:
    - MongoDB
 
+### Topics for Competencies:
+ - [OOP](./oop.md)
+ - [Java Basics](./java-basics.md)
+ - [Java Intermediate - Advanced](./java-advanced.md)
+ - [SQL](./qc-sql.md)
+ - [REST](./qc-rest.md)
+ - [Spring](./qc-spring.md)
+ - MongoDB (Qc study guide not yet written)
+
 ### Backend:
  - [OOP](./oop.md)
  - [Java Basics](./java-basics.md)
