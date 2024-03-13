@@ -21,8 +21,8 @@ Lastly we will build a CICD pipeline to deploy our various services to the cloud
 
 ## Functional Requirements
 A completed project will need to have the following features:
- - ~Authenticate users with registration and login~
- - ~Parse fixed-length files based on custom specification~
+ - ~Authenticate users with registration and login~ now a stretch goal
+ - ~Parse fixed-length files based on custom specification~ now a stretch goal
  - Store parsed records in a database
  - Store fixed-length file metadata in database
  - Archive fixed-length files to block/object storage
@@ -34,7 +34,7 @@ A completed project will need to have the following features:
 
 ## Non-functional Requirements
 A completred project should also adhere to the following constraints:
- - User passwords should be encrypted
+ - ~User passwords should be encrypted~ auth is now a stretch goal
  - User inputs should be validated and sanitized
  - Information should be transmitted between client and server(s) [RESTfully](https://en.wikipedia.org/wiki/REST)
 
@@ -64,10 +64,12 @@ The following describe how features should be implemented from the point of view
  - Delete or modify records
 
 ## Stretch Goals & Changes
-Currently there are no stretch goals defined. We may add some here later, or we may move functional requirements down here. I would encourage you to add your own features or ideas, and modify the project to make your version unique. You must still adhere to the requirements defined in this document. Feel free to discuss changes to these requirements with your trainer.
+ - Authentication - login and register functionality.
+   - passwords should not be stored as plaintext
+  
 
 ## Timeline
-There are 4 phases, 
+
 
 
 ### How to start:
