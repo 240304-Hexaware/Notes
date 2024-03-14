@@ -22,7 +22,7 @@ Lastly we will build a CICD pipeline to deploy our various services to the cloud
 ## Functional Requirements
 A completed project will need to have the following features:
  - ~Authenticate users with registration and login~ now a stretch goal
- - ~Parse fixed-length files based on custom specification~ now a stretch goal
+ - Parse fixed-length files based on custom specification
  - Store parsed records in a database
  - Store fixed-length file metadata in database
  - Archive fixed-length files to block/object storage
