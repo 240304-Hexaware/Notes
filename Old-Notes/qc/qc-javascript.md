@@ -36,7 +36,7 @@
  - What are callback functions? 
    - A function passed as an argument to another function in order to be invoked as part of that function.
  - What are self-invoking functions?
-   - A function that calls itself as soon as it is declared, the syntax is to enclose the declaration in parenthesis and then give a parameter list (function declaration)();
+   - An anonymous ad-hoc function that calls itself as soon as it is declared, the syntax is to enclose the declaration in parenthesis and then give a parameter list (function declaration)();
  - What is the difference between == and ===? Which one allows for type coercion?
    - == allows type coercion, === does not(strict comparison). 
  - What is the difference between for-of and for-in loops?
