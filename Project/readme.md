@@ -68,7 +68,7 @@ The following describe how features should be implemented from the point of view
  - Choose a specification for fixed-length files
    - Users should be able to define a spec file in notepad and transmit that file to the server
    - JSON would be best, something like this:
-   ```JSON
+  ```JSON
    {
   "manufacturer": {
     "start_pos": 0,
@@ -86,8 +86,7 @@ The following describe how features should be implemented from the point of view
     "dataType": "String"
   }
 }
-
-   ```
+```
  - View all fixed-length files I have previously uploaded
  - Re-use custom specifications I have previously uploaded
  - View records parsed from files
