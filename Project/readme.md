@@ -55,10 +55,14 @@ The following describe how features should be implemented from the point of view
  - View all fixed-length files I have previously uploaded
  - Re-use custom specifications I have previously uploaded
  - View records parsed from files
-   - I would encourage everyone to consider how users may want to consume the records produced, this can depend on your unique project
-   - Maybe view all records from files I have previously uploaded, grouped by file, or specification
-   - Maybe view the most recent 100 records
-   - The goal here is to create a few different workflows involving querying for records and filtering, grouping, sorting these records for human consumption
+   - Whenever I parse a file, I should imediately get the parsed data rendered on screen
+     - on the backend we get the fixed-length file, parse it according to a spec file, and return the JSON representation of all records parsed form that file.
+   - A view of all parsed records from the current user (even if we don't have real authentication)
+     - on the backend you get the request and query the database for all records associated with that user
+     - then return that collection of records to the front end, where it is "unwrapped" and rendered on screen (not just in the console)
+   - A view of all records that are of a specific type (for instance maybe I want to see all car records, which are those parsed from the fixed-lencth files that a car spec file describes)
+     - on the backend you get the request and query the database for all records associated with specific spec file.
+     - then return that collection of records to the front end, where it is "unwrapped" and rendered on screen (not just in the console)
  - Download a copy of the original fixed-length file I had uploaded previously
  - Download a copy of the parsed records from a file I had uploaded previously, formatted in JSON
   
@@ -95,6 +99,34 @@ Think about the API - (presentation layer) what HTTP endpoints will be available
 Think about the UI - What screens will need to show what information and invoke what API calls? How will the user find what they're looking for? 
 
 
+### Deadlines (MVP - Minimum viable product):
+By EOB on Friday 3/29:
+ - parsing prototype complete - You can choose a file from within an angular SPA, transmit it to the backend in an HTTP request, have your server pick up the file from the request and parse it, then persist the records, drop the file into storage, and finally respond to the request with the JSON representation of the parsed data.
+
+By EOB Tuesday 4/2:
+ - expanded parsing - We need to be able to parse any file based on any spec file
+   - The user should be able to define a new spec, select that spec file from within our angular SPA, transmit it to the backend, have it get parsed so that it can be used to parse fixed-length files.
+   - The user should be able to view historic parsed records, see required views above.
+     - view all records associated with the current user
+     - view all records associated with a spec
+   - ability to parse multiple records from a file.
+     - Method 1: The records are not be delimited by any character in the file, just like the fields we would be parsing based on fixed-length widths.
+     - Method 2: We delmimit records with a character like newline "\n", however the records themselves still need to be fixed-length.
+
+By EOB Thursday 4/4 (code freeze!): 
+ - The application should be in it's final state and ready to be demonstrated in the presentation on 4/5.
+ - The front end should be useable, but doesn't have to be the most beautiful thing ever
+ - You should be ready to present and speak on your project for 5-10 mins, and be ready for a Q/A where Kyle, Carolyn, or anyone in the audience can ask questions.
+   - You want a script!
+   - You want a slideshow (powerpoint, prezi, or whatever)
+   - Make sure to introduce yourself at the start
+   - Demonstrate your application in use
+   - Discuss the project, some example topics include:
+     - Talk about not just the deliverable, but the journey to the finish line
+     - Interesting parts of the project
+     - toughest challenges
+     - how you overcame challenges
+     - or you were totally blocked
 
 
 
