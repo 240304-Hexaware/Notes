@@ -25,7 +25,7 @@ MVP #1 - **By EOB on Friday 3/29**:
 
 MVP #2 - **By EOB Tuesday 4/2**:
  - expanded parsing - We need to be able to parse any file based on any spec file
-   - The user should be able to define a new spec, select that spec file from within our angular SPA, transmit it to the backend, have it get parsed so that it can be used to parse fixed-length files.
+   - The user should be able to define a new spec, select that spec file from within our angular SPA, transmit it to the backend, have it get interpreted so that it can be used to parse fixed-length files.
    - The user should be able to view historic parsed records, see required views above.
      - view all records associated with the current user
      - view all records associated with a spec
