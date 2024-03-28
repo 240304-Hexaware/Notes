@@ -21,22 +21,39 @@ Lastly we will build a CICD pipeline to deploy our various services to the cloud
 
 ## Functional Requirements
 A completed project will need to have the following features:
- - ~Authenticate users with registration and login~ now a stretch goal
- - Parse fixed-length files based on custom specification
- - Store parsed records in a database
- - Store fixed-length file metadata in database
- - Archive fixed-length files to block/object storage
- - View parsed records in JSON format
- - Download copies of original fixed-length files from archive
- - Download a JSON representation of all records from a fixed-length file
- - Offer a web UI for users to access functionality
+ - Parse fixed-length files based on custom specification (MVP #1)
+ - Store parsed records in a database (MVP #1)
+ - Archive fixed-length files to block/object storage (MVP #1)
+ - Store fixed-length file metadata in database - specifically the location where the archived file was stored (MVP #1)
+ - View parsed records (3 views for MVP, see below) (MVP #2)
+   - Whenever I parse a file, I should imediately get the parsed data rendered on screen
+     - on the backend we get the fixed-length file, parse it according to a spec file, and return the JSON representation of all records parsed form that file.
+   - A view of all parsed records from the current user (even if we don't have real authentication)
+     - on the backend you get the request and query the database for all records associated with that user
+     - then return that collection of records to the front end, where it is "unwrapped" and rendered on screen (not just in the console)
+   - A view of all records that are of a specific type (for instance maybe I want to see all car records, which are those parsed from the fixed-lencth files that a car spec file describes)
+     - on the backend you get the request and query the database for all records associated with specific spec file.
+     - then return that collection of records to the front end, where it is "unwrapped" and rendered on screen (not just in the console)
+ - Offer a web UI for users to access functionality (MVP #1-3)
 
+The following items are now **stretch goals**, not required for MVP
+ - Authenticate users with registration and login
+   - You don't need to worry about authentication or authorization, but you will still want to keep track of a user interacting with the app.
+   - You can just send a username or something in the header so the backend knows who is requesting things
+   - Call this a "trusting system", if a request claims to be from user: kplummer, then we just accept that
+ - Download copies of original fixed-length files from archive
+   - This is referring to recovering a copy of the original fixed-length file as it was archived
+   - see **demo-file-transfer** for example of sending files in HTTP requests and responses
+ - Download a JSON representation of all records from a fixed-length file
+   - This was referring to creating a text file with the JSON representations of the records. Now, just rendering the data on screen in the SPA is MVP and this is a stretch goal.
 
 ## Non-functional Requirements
 A completred project should also adhere to the following constraints:
  - ~User passwords should be encrypted~ auth is now a stretch goal
- - User inputs should be validated and sanitized
+ - ~User inputs should be validated and sanitized~ Don't worry too much about this, consider it a stretch goal. Focus primarily on making the workflows basic enough for end users. We will assume our users are smart and well behaved.
  - Information should be transmitted between client and server(s) [RESTfully](https://en.wikipedia.org/wiki/REST)
+   - This is absoutely required, and I think everyone is already doing this just fine.
+   - Resource representations should be sent in HTTP request/response bodies as JSON
 
 
 
@@ -49,9 +66,28 @@ The following describe how features should be implemented from the point of view
  - ~Authenticate as a registered user by supplying username and password~ stretch goal
  - Upload a fixed-length file for parsing records
  - Choose a specification for fixed-length files
-   - You may implement this by having users upload a spec file along side a flat file
-   - You may implement this by "hard coding" the specifications on the server
-   - You may implement this by storing a selection of spec files on the server
+   - Users should be able to define a spec file in notepad and transmit that file to the server
+   - JSON would be best, something like this:
+   ```JSON
+   {
+  "manufacturer": {
+    "start_pos": 0,
+    "end_pos": 19,
+    "dataType": "String"
+  },
+  "model": {
+    "start_pos": 20,
+    "end_pos": 39,
+    "dataType": "String"
+  },
+  "year": {
+    "start_pos": 40,
+    "end_pos": 43,
+    "dataType": "String"
+  }
+}
+
+   ```
  - View all fixed-length files I have previously uploaded
  - Re-use custom specifications I have previously uploaded
  - View records parsed from files
@@ -100,10 +136,10 @@ Think about the UI - What screens will need to show what information and invoke 
 
 
 ### Deadlines (MVP - Minimum viable product):
-By EOB on Friday 3/29:
+MVP #1 - By EOB on Friday 3/29:
  - parsing prototype complete - You can choose a file from within an angular SPA, transmit it to the backend in an HTTP request, have your server pick up the file from the request and parse it, then persist the records, drop the file into storage, and finally respond to the request with the JSON representation of the parsed data.
 
-By EOB Tuesday 4/2:
+MVP #2 - By EOB Tuesday 4/2:
  - expanded parsing - We need to be able to parse any file based on any spec file
    - The user should be able to define a new spec, select that spec file from within our angular SPA, transmit it to the backend, have it get parsed so that it can be used to parse fixed-length files.
    - The user should be able to view historic parsed records, see required views above.
@@ -113,7 +149,7 @@ By EOB Tuesday 4/2:
      - Method 1: The records are not be delimited by any character in the file, just like the fields we would be parsing based on fixed-length widths.
      - Method 2: We delmimit records with a character like newline "\n", however the records themselves still need to be fixed-length.
 
-By EOB Thursday 4/4 (code freeze!): 
+MVP #3 - By EOB Thursday 4/4 (code freeze!): 
  - The application should be in it's final state and ready to be demonstrated in the presentation on 4/5.
  - The front end should be useable, but doesn't have to be the most beautiful thing ever
  - You should be ready to present and speak on your project for 5-10 mins, and be ready for a Q/A where Kyle, Carolyn, or anyone in the audience can ask questions.
