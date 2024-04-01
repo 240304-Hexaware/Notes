@@ -5,10 +5,10 @@ Your goal will be to create a simple application that can do basic I/O to a mong
  - Create a new Maven project in Intellij and copy the spring boot files into it
  - Set up the connection string in application properties:
    - Talk to Kyle about username and password to access cluster
-   - ```spring.data.mongodb.uri=mongodb+srv://<username>:<pwd>@<cluster>.mongodb.net/<db name>```
+   - ```spring.data.mongodb.uri=mongodb+srv://<username>:<pwd>@<cluster>/<db name>```
    - username: your username
    - password: testPass123
-   - cluster: revature
+   - cluster: revature.phob7l3.mongodb.net
    - database name: your db name (include your name please)
    - Example: ```spring.data.mongodb.uri=mongodb+srv://testuser:testpass123@revature.phob7l3.mongodb.net/kyle-db```
  - Create a new entity with several private fields including id of type ObjectId, an empty public constructor, public getters and setters, and a toString() implementation
