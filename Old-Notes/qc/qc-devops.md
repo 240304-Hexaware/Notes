@@ -1,7 +1,7 @@
 # QC Questions on DevOps
 
  - What is DevOps?
-   - A combination of Development and Operations, is a set of practices and methodologies designed to combine the development, deployment, and maintenance of code into a streamlined process.
+   - A combination of Development and Operations, is a set of practices and methodologies designed to combine the development, deployment, and maintenance of code into a streamlined process. An important part of DevOps is the CICD pipeline, which should automate the process of building and deploying code.
  - What is the goal of various DevOps processes? 
    - To expadite parts of the SDLC with automation in order to deliver greater, quicker, and more useful feedback for the development process.
  - Explain CI/CD. What is the difference between Continuous Deployment and Continuous Delivery?
