@@ -3,16 +3,20 @@ These files are full of questions you are likely to be asked as part of QC. You 
 
 
 ### Current Competencies for QC (Week 1 - 2024-03-04):
- - MongoDB
-
-### Topics for Competencies:
- - [OOP](./oop.md)
- - [Java Basics](./java-basics.md)
- - [Java Intermediate - Advanced](./java-advanced.md)
- - [SQL](./qc-sql.md)
- - [REST](./qc-rest.md)
- - [Spring](./qc-spring.md)
- - [MongoDB](./qc-mongodb.md)
+ - DevOps
+   - discipline of devops
+   - the CICD Pipeline
+   - Jenkins
+ - SDLC and Agile, specifically how this matters to devops
+   - provide better, faster, more frequent feedback for an iterative development methodology
+ - docker
+ - kubernetes
+ - cloud solutions
+   - AWS
+     - EC2
+     - RDS
+     - S3
+   - MongoDB Atlas
 
 ### Backend:
  - [OOP](./oop.md)
